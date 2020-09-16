@@ -27,6 +27,11 @@
    demo.py
 ## export to onnx
    pytorch2onnx.py
+   
+## some tips(maybe useful)
+ * For model design ,you can use other effient backbone ,or using auxiliary branch when the pose angle could be obtained refered the pfld.
+ * Add some augmentation methods
+ * using some effient training lr schedules 
 
 ## Reference
 	* [pfld-pytorch](https://github.com/polarisZhao/PFLD-pytorch)

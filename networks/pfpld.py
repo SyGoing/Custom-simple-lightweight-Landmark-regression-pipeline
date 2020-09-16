@@ -153,8 +153,8 @@ class PFLDInference(nn.Module):
 
 
 if __name__ == '__main__':
-    input = torch.randn(1, 3, 112, 112)
-    plfd_backbone = PFLDInference()
+    input = torch.randn(1, 3, 48, 120)
+    plfd_backbone = PFLDInference(4)
     alandmarks = plfd_backbone(input)
     print(plfd_backbone)
 

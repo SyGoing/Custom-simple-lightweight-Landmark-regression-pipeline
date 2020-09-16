@@ -161,7 +161,7 @@ def main(args):
 def parse_args():
     parser = argparse.ArgumentParser(description='Trainging Template')
     # general
-    parser.add_argument('-j', '--workers', default=2, type=int)
+    parser.add_argument('-j', '--workers', default=4, type=int)
 
     # training
     ##  -- optimizer

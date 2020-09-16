@@ -36,7 +36,7 @@ def main():
     images_path = os.path.join(data_root, "images")
     image_files = os.listdir(images_path)
 
-    fw = open(os.path.join(output_dir, 'landmark_list_test' + '.txt'), 'w')
+    fw = open(os.path.join(output_dir, 'landmark_list' + '.txt'), 'w')
 
     crop_count = 0
     for file in image_files:

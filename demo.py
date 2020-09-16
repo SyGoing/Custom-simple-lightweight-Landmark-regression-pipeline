@@ -18,6 +18,7 @@ def infer_image(image_path,model,transform):
     for (x,y) in pre_landmark.astype(np.float32):
         cv2.circle(image, ( x,  y), 1, (0, 0, 255))
 
+    cv2.imwrite('res1.jpg',image)
     cv2.namedWindow("kp",cv2.WINDOW_NORMAL)
     cv2.imshow("kp",image)
     cv2.waitKey()
@@ -75,7 +76,7 @@ def parse_args():
     # -- snapshot、tensorboard log and checkpoint
     parser.add_argument('--test_type', default="images", type=str,help="image/webcam/video/images")
     parser.add_argument('--data_path', default="./data/processed_data/croped_images", type=str, help="./name.jpg/name.mp4")
-    parser.add_argument('--model_path',default='./models/checkpoint/snapshot/checkpoint_epoch_158.pth',type=str,metavar='PATH')
+    parser.add_argument('--model_path',default='./models/checkpoint/snapshot/checkpoint_epoch_200.pth',type=str,metavar='PATH')
     parser.add_argument('--test_batchsize', default=1, type=int)
     args = parser.parse_args()
     return args

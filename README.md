@@ -12,9 +12,9 @@
 ### convert outline style landmarks to the list.txt [path/image x1 y1 x2 y2 ....] 
   cd ./datasets
   1) only marked the outline points
-     python create_plate_data.py
+  python create_plate_data.py
   2) bbox and keypoints have been marked
-     python create_box_points_data.py
+  python create_box_points_data.py
 	   
 ### convert labelme json format to voc style for multitask training if you need
    cd ./datasets 

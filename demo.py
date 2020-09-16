@@ -18,7 +18,6 @@ def infer_image(image_path,model,transform):
     for (x,y) in pre_landmark.astype(np.float32):
         cv2.circle(image, ( x,  y), 1, (0, 0, 255))
 
-    cv2.imwrite('res1.jpg',image)
     cv2.namedWindow("kp",cv2.WINDOW_NORMAL)
     cv2.imshow("kp",image)
     cv2.waitKey()

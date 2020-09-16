@@ -138,7 +138,7 @@ def parse_args():
 	                    help="path to database")
 	parser.add_argument("--anno_save_path", type=str, default='../data/original_data/annoxml',
 	                    help="path to output file")
-	parser.add_argument("--is_show", type=bool, default=False,
+	parser.add_argument("--is_show", type=bool, default=True,
 	                    help="output image size")
 	args = parser.parse_args()
 	return args
@@ -251,7 +251,7 @@ if __name__ == "__main__":
                 cv2.circle(img, center, 2, (0, 255, 255), 2)
         if args.is_show:
             cv2.namedWindow('check', cv2.WINDOW_NORMAL)
-            cv2.imshow('check', img)
+            cv2.imwrite("bboxlm.jpg",img)
             cv2.waitKey(0)
         ### ------写入该XML文件中
         print(xml_file_name)

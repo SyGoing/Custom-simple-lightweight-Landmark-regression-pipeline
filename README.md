@@ -30,7 +30,10 @@
  * For model design ,you can use other effient backbone ,or using auxiliary branch when the pose angle could be obtained refered the pfld.
  * Add some augmentation methods
  * using some effient training lr schedules 
-
+## result
+ ![bboxlm.jpg](https://github.com/SyGoing/Custom-simple-lightweight-Landmark-regression-pipeline/blob/master/result/bboxlm.jpg)
+ ![res1.jpg](https://github.com/SyGoing/Custom-simple-lightweight-Landmark-regression-pipeline/blob/master/result/res1.jpg)
+ ![res2.jpg](https://github.com/SyGoing/Custom-simple-lightweight-Landmark-regression-pipeline/blob/master/result/res2.jpg)
 ## Reference
  * [pfld-pytorch](https://github.com/polarisZhao/PFLD-pytorch)
  * [wingloss paper](https://arxiv.org/abs/1711.06753)
